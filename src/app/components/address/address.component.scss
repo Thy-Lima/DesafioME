@@ -1,0 +1,47 @@
+#address {
+    justify-content: center;
+    align-items: center;
+}
+
+h1.addressFormat {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: -0.2em;
+}
+
+#boxShip {
+    padding: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    border: 0.25px solid rgba(255, 0, 0, 0.2);
+    border-radius: 9px;
+}
+
+.shipTo {
+    font-size: 0.9em;
+     color: red;
+     margin-bottom: 0.8em;
+    }
+
+ .iconFormat {
+    font-size: 1.5em;
+    padding-bottom: -0.02em;
+}
+
+.formatTitle {
+    margin-bottom: 0.2em;
+}
+
+.addressTitle {
+    font-weight: bold;
+}
+
+.additionalTitle {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.addressFormat {
+    margin-top: -0.3em;
+}
+

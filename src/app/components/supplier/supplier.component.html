@@ -1,0 +1,78 @@
+<div id="boxSupplier">
+  <ion-row class="supplier">Supplier</ion-row>
+  <ion-row class="ion-align-items-center supplierName">
+    <ion-col size="auto">
+      <ion-row class="supplierName">
+        {{supplierProcess.name}}
+      </ion-row>
+    </ion-col>
+    <ion-col size="auto">
+      <ion-row class="codeSupplier">
+        Code  #{{supplierProcess.code}}
+      </ion-row>
+    </ion-col>
+  </ion-row>
+    <ion-row>
+      <ion-col size="4">
+        <div id="boxDataSupplier">
+          <ion-col>
+            <ion-row class="dataSupplier">
+              {{supplierProcess.document.value}}
+            </ion-row>
+            <ion-row class="dataSupplier">
+              {{supplierProcess.address}}
+            </ion-row>
+          </ion-col>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div id="boxContactSupplier">
+          <ion-row class="ion-align-items-center contactSupplier">
+            <ion-col size="auto">
+              <ion-icon class="iconFormat" name="person-outline"></ion-icon>
+            </ion-col>
+            <ion-col size="auto">
+              {{supplierProcess.contact.name}} - 
+            </ion-col>
+            <ion-col size="auto">
+              {{supplierProcess.contact.email}}
+            </ion-col>
+          </ion-row>
+          <ion-row class="ion-align-items-center contactSupplier">
+            <ion-col size="auto">
+              <ion-icon class="iconFormat" name="call-outline"></ion-icon>
+            </ion-col>
+            <ion-col size="auto">
+              {{supplierProcess.contact.phone}} 
+            </ion-col>
+            <ion-col size="auto">
+              <ion-icon class="iconFormat" name="recording-outline"></ion-icon>
+            </ion-col>
+            <ion-col size="auto">
+              {{supplierProcess.contact.fax}}
+            </ion-col>
+          </ion-row>
+        </div>
+      </ion-col>
+      <ion-col size="auto">
+        <div id="boxAnswer">
+          <ion-row class="ion-align-items-center contactSupplier">
+            <ion-col size="auto">
+              <ion-icon class="iconFormat" name="eye-outline"></ion-icon>
+            </ion-col>
+            <ion-col size="auto">
+              Read: {{supplierProcess.readAt | date: 'MM'}}/{{supplierProcess.readAt | date: 'dd'}}/{{supplierProcess.readAt | date: 'yyyy'}}  {{supplierProcess.readAt | date: 'HH'}}:{{supplierProcess.readAt | date: 'mm'}}
+            </ion-col>
+          </ion-row>
+          <ion-row class="ion-align-items-center contactSupplier">
+            <ion-col size="auto">
+              <ion-icon class="iconFormat" name="arrow-undo-outline"></ion-icon>
+            </ion-col>
+            <ion-col size="auto">
+              Last Repply: {{supplierProcess.lastReplyAt | date: 'MM'}}/{{supplierProcess.lastReplyAt | date: 'dd'}}/{{supplierProcess.lastReplyAt | date: 'yyyy'}}  {{supplierProcess.lastReplyAt | date: 'HH'}}:{{supplierProcess.lastReplyAt | date: 'mm'}}
+            </ion-col>
+          </ion-row>
+        </div>
+      </ion-col>
+    </ion-row>
+</div>

@@ -1,0 +1,17 @@
+<div id="boxCurrency">
+  <ion-row>
+    <h1 class="titleProcess">
+      {{currencyProcess.currency}} {{currencyProcess.price | currency }}
+    </h1>
+  </ion-row>
+  <ion-row class="maDefinition">
+    <h1 class="dataProcess statusColor">
+      {{currencyProcess.status}}
+    </h1>
+  </ion-row>
+  <ion-row class="maDefinition">
+    <h1 class="dataProcess createdColor">
+      Create on {{currencyProcess.createdAt | date: 'MM'}}/{{currencyProcess.createdAt | date: 'dd'}}/{{currencyProcess.createdAt | date: 'yyyy'}}
+    </h1>
+  </ion-row>
+</div>

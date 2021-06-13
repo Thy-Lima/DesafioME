@@ -1,0 +1,31 @@
+<ion-content [fullscreen]="true">
+    <div *ngIf="dataProcess">
+        <ion-row class="ion-align-items-center">
+            <ion-col size="auto" class="maTop">
+                <app-serial [serialProcess]="dataProcess.header"></app-serial>
+            </ion-col>
+            <ion-col>
+                <app-buyer [buyerProcess]="dataProcess.header"></app-buyer>
+            </ion-col>
+            <ion-col size="auto">
+                <app-currency [currencyProcess]="dataProcess.header"></app-currency>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <app-supplier [supplierProcess]="dataProcess.supplier"></app-supplier>
+        </ion-row>
+        <ion-row>
+            <app-section (clickButton)="showAddress($event)" ></app-section>
+        </ion-row>
+        <ion-row *ngIf="showAddressBox == true; else dontShowAddress">
+            <ion-col size="4" *ngFor="let address of dataProcess.addresses">
+                <app-address [addressProcess]="address"></app-address>
+            </ion-col>
+        </ion-row>
+        <ng-template #dontShowAddress>
+            <ion-row>
+                <ion-col class="withoutClick"></ion-col>
+            </ion-row>
+        </ng-template>
+    </div>
+</ion-content>

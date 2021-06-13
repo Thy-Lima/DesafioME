@@ -1,0 +1,49 @@
+#boxLeft {
+    background-color: blue;
+    margin-right: 2em;
+    padding-left: 1.6em;
+    margin-left: -1em;
+    border: 0px solid blue;
+    border-radius: 8px;
+}
+
+    #boxLeft   h1 {
+        color: white;
+        padding-left: 1.1em;
+    }
+
+        .purchaseOrder {
+            font-size: 1em;
+            margin-top: 0.7em;
+            margin-bottom: 0px;
+        }
+
+        .serialClient {
+            margin-top: 0.18em;
+            font-weight: bold;
+            font-size: 1.3em;
+            margin-left: -0.25em;
+            margin-bottom: 0px;
+        }
+
+        .serialME {
+            margin-top: 0.5em;
+            font-style: italic;
+            font-size: 0.7em;
+            font-weight: bold;
+            margin-left: 0.5em;
+        }
+
+    ion-avatar {
+        margin-left: 9.9em;
+        margin-top: -4.65em;
+        width: 48pt;
+        height: 47pt;
+    }
+    
+        ion-avatar img {
+            overflow: hidden;
+            border-radius: 50%;
+            border: 3.2px solid darkcyan;
+            box-shadow: 0px 2.5px rgba(0, 91, 91, 0.5);
+        }

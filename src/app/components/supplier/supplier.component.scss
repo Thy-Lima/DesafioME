@@ -1,0 +1,55 @@
+#boxSupplier {
+    padding-top: 1.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    border: 0.25px solid rgba(255, 0, 0, 0.2);
+    border-radius: 9px;
+}
+
+.supplier {
+   font-size: 0.9em;
+    color: red;
+}
+
+.supplierName {
+    margin-top: 0.8em;
+    font-size: 1em;
+    margin-bottom: 0px;
+}
+
+.codeSupplier {
+    padding: 0.4em;
+    background-color: rgba(0,0,0,0.1);
+}
+
+#boxDataSupplier {
+    padding-top: 0px;
+}
+
+
+ion-row.dataSupplier {
+    padding-top: 0px;
+    margin-bottom: 1em;
+}
+
+#boxContactSupplier {
+    padding-top: 6px;
+    margin-left: 2em;
+}
+
+ion-row.contactSupplier {
+    padding-top: 0px;
+    margin-bottom: -0.2em;
+}
+
+.iconFormat {
+    font-size: 1.5em;
+    padding-bottom: -0.02em;
+}
+
+#boxAnswer {
+    padding-top: 6px;
+    margin-left: 2em;
+}

@@ -1,0 +1,45 @@
+<div id="boxShip">
+  <ion-row class="shipTo">{{addressProcess.label}}</ion-row>
+  <ion-row class="formatTitle">
+    <ion-col size="auto" class="addressTitle">{{addressProcess.name}}</ion-col>
+    <ion-col class="additionalTitle" *ngIf="addressProcess.code != null"> - ({{addressProcess.code}})</ion-col>
+  </ion-row>
+  <ion-row class="ion-align-items-center formatTitle">
+    <ion-col size="auto">
+      <ion-icon class="iconFormat" name="location-outline"></ion-icon>
+    </ion-col>
+    <ion-col class="formatTitle">
+      {{addressProcess.address}}
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-align-items-center addressFormat">
+    <ion-col size="auto">
+      <ion-icon class="iconFormat" name="person-outline"></ion-icon>
+    </ion-col>
+    <ion-col>
+      {{addressProcess.contact.name}}
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-align-items-center addressFormat">
+    <ion-col size="auto">
+      <ion-icon class="iconFormat" name="mail-outline"></ion-icon>
+    </ion-col>
+    <ion-col>
+      {{addressProcess.contact.email}}
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-align-items-center addressFormat">
+    <ion-col size="auto">
+      <ion-icon class="iconFormat" name="call-outline"></ion-icon>
+    </ion-col>
+    <ion-col>
+      {{addressProcess.contact.phone}}
+    </ion-col>
+  <ion-col size="auto">
+    <ion-icon class="iconFormat" name="recording-outline"></ion-icon>
+  </ion-col>
+  <ion-col>
+    {{addressProcess.contact.fax}}
+  </ion-col>
+</ion-row>
+</div>
